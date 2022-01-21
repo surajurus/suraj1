@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Yanone+Kaffeesatz:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100&family=Yanone+Kaffeesatz:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@100&family=Roboto:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Raleway:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Licorice&family=Raleway:wght@100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dff9fb;
+}
+.list-items {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.list-items-a {
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  /* line-height: 40px; */
+  font-size: 1.2rem;
+  margin-right: 40px;
+  padding: 7px 13px;
+}
+nav {
+  background-color: #f72585;
+}
+ul {
+  display: flex;
+  justify-content: right;
+  line-height: 60px;
+}
+#navbar ul li a {
+  display: block;
+  padding: 5px;
+  position: relative;
+}
+
+.list-items-a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 0%;
+  height: 2px;
+  background-color: #c7ecee;
+  transition: all 0.5s;
+}
+
+.list-items-a:hover:before {
+  width: 100%;
+  background-color: #4cc9f0;
+}
+.list-items-a:hover {
+  color: #dff9fb;
+  transition: 1.2s;
+}
